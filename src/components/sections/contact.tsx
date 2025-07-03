@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Github, Linkedin, Twitter, Send, Calendar } from "lucide-react";
+import { Send, Calendar } from "lucide-react";
 import Link from "next/link";
 
 const socialLinks = [
@@ -47,10 +47,10 @@ export function ContactSection() {
             </Button>
           </div>
           <div className="flex items-center gap-4">
-            {socialLinks.map(({ href, icon: Icon, label }) => (
+            {socialLinks.map(({ href, icon, label }) => (
               <Button key={href} variant="ghost" size="icon" asChild>
                 <Link href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
-                  <Icon className="h-6 w-6" />
+                  <i className={`devicon-${icon} text-2xl`}></i>
                 </Link>
               </Button>
             ))}
