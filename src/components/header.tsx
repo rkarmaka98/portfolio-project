@@ -58,8 +58,8 @@ export function Header() {
       key={link.href}
       href={link.href}
       className={cn(
-        'text-sm font-medium transition-colors hover:text-foreground',
-        activeSection === link.href.substring(1) ? 'text-foreground' : 'text-muted-foreground'
+        'text-sm font-medium transition-colors hover:text-primary',
+        activeSection === link.href.substring(1) ? 'text-primary' : 'text-muted-foreground'
       )}
       onClick={isMobile ? () => setIsMenuOpen(false) : undefined}
       prefetch={false}

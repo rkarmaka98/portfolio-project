@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Lightbulb } from "lucide-react";
 
 const strengths = [
   "Retrieval-Augmented Generation (RAG)",
@@ -7,6 +7,12 @@ const strengths = [
   "Transformers & Attention Mechanisms",
   "Backend Engineering",
   "Python for AI/ML",
+];
+
+const currentlyExploring = [
+    "Server-side generation with Gemini 2.0 Flash",
+    "Advanced agentic workflows with LangGraph",
+    "Optimizing RAG pipelines for low-latency applications"
 ];
 
 export function AboutSection() {
@@ -22,9 +28,20 @@ export function AboutSection() {
             <p>
               My AI philosophy centers on creating systems that are transparent, interpretable, and aligned with human values. I am particularly interested in agentic AI and how autonomous systems can collaborate with humans to solve complex problems.
             </p>
-            <p>
-              Currently, I'm exploring efficient multi-modal models and their applications in creating more natural human-computer interfaces.
-            </p>
+             <div className="mt-6 rounded-lg border bg-card p-4 text-sm">
+                <h4 className="mb-3 flex items-center font-semibold text-card-foreground">
+                    <Lightbulb className="mr-2 h-5 w-5 text-primary" />
+                    Currently Exploring
+                </h4>
+                <ul className="space-y-2">
+                    {currentlyExploring.map((item) => (
+                    <li key={item} className="flex items-start">
+                        <span className="mr-3 mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary/70" />
+                        <span className="text-muted-foreground">{item}</span>
+                    </li>
+                    ))}
+                </ul>
+            </div>
             <p>
               I am open to relocating and remote opportunities that allow me to contribute to challenging AI projects.
             </p>

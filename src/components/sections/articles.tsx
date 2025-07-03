@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import {
   Card,
@@ -9,7 +11,10 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Search } from "lucide-react";
+import { useState, useMemo } from "react";
+import Fuse from "fuse.js";
+import { Input } from "../ui/input";
 
 const articles = [
   {
@@ -44,12 +49,38 @@ const articles = [
   },
 ];
 
+const fuseOptions = {
+  keys: ["title", "description", "tags"],
+  threshold: 0.4,
+};
+
+
 export function ArticlesSection() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const fuse = useMemo(() => new Fuse(articles, fuseOptions), []);
+
+  const filteredArticles = useMemo(() => {
+    if (!searchTerm.trim()) return articles;
+    return fuse.search(searchTerm).map((result) => result.item);
+  }, [searchTerm, fuse]);
+
   return (
     <section id="articles" className="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-      <h2 className="mb-8 text-center text-3xl font-bold tracking-tight">Blogs & Articles</h2>
+      <div className="mb-8 flex flex-col items-center gap-4 md:flex-row md:justify-between">
+        <h2 className="text-3xl font-bold tracking-tight">Blogs & Articles</h2>
+        <div className="relative w-full max-w-sm">
+          <Input
+            type="text"
+            placeholder="Search articles..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="pl-10"
+          />
+          <Search className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
+        </div>
+      </div>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {articles.map((article) => {
+        {filteredArticles.length > 0 ? filteredArticles.map((article) => {
           const articleSchema = {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
@@ -80,7 +111,7 @@ export function ArticlesSection() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
               />
               <CardHeader>
-                <div className="relative h-48 w-full">
+                <div className="relative w-full aspect-video">
                   <Image
                     src={article.image}
                     alt={article.title}
@@ -97,7 +128,7 @@ export function ArticlesSection() {
                  <div className="flex items-center justify-between">
                   <div className="flex flex-wrap gap-2">
                     {article.tags.map((tag) => (
-                      <Badge key={tag} variant="outline">{tag}</Badge>
+                      <Badge key={tag} variant="secondary">{tag}</Badge>
                     ))}
                   </div>
                   <span className="text-xs text-muted-foreground">{article.readTime}</span>
@@ -112,7 +143,7 @@ export function ArticlesSection() {
               </CardFooter>
             </Card>
           );
-        })}
+        }) : <p className="col-span-full text-center text-muted-foreground">No articles found.</p>}
       </div>
     </section>
   );
