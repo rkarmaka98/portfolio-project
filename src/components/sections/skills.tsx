@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
 
 const skillCategories: {
   title: string;
@@ -17,37 +18,37 @@ const skillCategories: {
   {
     title: "Frameworks",
     skills: [
-      { name: "PyTorch", icon: "pytorch" },
-      { name: "TensorFlow", icon: "tensorflow" },
-      { name: "scikit-learn", icon: "scikitlearn" },
-      { name: "Hugging Face", icon: "huggingface" },
+      { name: "PyTorch", icon: "pytorch-original" },
+      { name: "TensorFlow", icon: "tensorflow-original" },
+      { name: "scikit-learn", icon: "scikit-learn-plain" },
+      { name: "Hugging Face", icon: "huggingface-original" },
     ],
   },
   {
     title: "Tooling",
     skills: [
-      { name: "Git", icon: "git" },
-      { name: "Docker", icon: "docker" },
-      { name: "Kubernetes", icon: "kubernetes" },
+      { name: "Git", icon: "git-plain" },
+      { name: "Docker", icon: "docker-plain" },
+      { name: "Kubernetes", icon: "kubernetes-plain" },
       { name: "Weights & Biases" },
     ],
   },
   {
     title: "Backend/Full-stack",
     skills: [
-      { name: "FastAPI", icon: "fastapi" },
-      { name: "Node.js", icon: "nodejs" },
-      { name: "PostgreSQL", icon: "postgresql" },
-      { name: "Next.js", icon: "nextjs" },
+      { name: "FastAPI", icon: "fastapi-plain" },
+      { name: "Node.js", icon: "nodejs-plain" },
+      { name: "PostgreSQL", icon: "postgresql-plain" },
+      { name: "Next.js", icon: "nextjs-original" },
     ],
   },
   {
     title: "Infra/DevOps",
     skills: [
       { name: "CI/CD" },
-      { name: "GCP", icon: "googlecloud" },
-      { name: "AWS", icon: "amazonwebservices" },
-      { name: "Terraform", icon: "terraform" },
+      { name: "GCP", icon: "googlecloud-plain" },
+      { name: "AWS", icon: "amazonwebservices-original-wordmark" },
+      { name: "Terraform", icon: "terraform-plain" },
     ],
   },
   {
@@ -76,9 +77,11 @@ export function SkillsSection() {
                     key={skill.name}
                     className="inline-flex items-center gap-2 rounded-full border border-transparent bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground transition-colors hover:bg-secondary/80"
                   >
-                    <div
-                      data-devicon-placeholder={skill.icon}
-                      className="h-4 w-4 shrink-0"
+                    <i
+                      className={cn(
+                        `devicon-${skill.icon}`,
+                        'text-lg'
+                      )}
                       aria-label={`${skill.name} icon`}
                     />
                     <span>{skill.name}</span>
