@@ -23,6 +23,9 @@ export function AboutSection() {
               My AI philosophy centers on creating systems that are transparent, interpretable, and aligned with human values. I am particularly interested in agentic AI and how autonomous systems can collaborate with humans to solve complex problems.
             </p>
             <p>
+              Currently, I'm exploring efficient multi-modal models and their applications in creating more natural human-computer interfaces.
+            </p>
+            <p>
               I am open to relocating and remote opportunities that allow me to contribute to challenging AI projects.
             </p>
           </div>

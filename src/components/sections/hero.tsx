@@ -11,6 +11,9 @@ export function HeroSection() {
       <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
         Building intelligent systems that scale.
       </p>
+      <p className="mx-auto mt-4 max-w-3xl text-md text-muted-foreground sm:text-lg">
+        Specializing in production-ready deep learning and agentic systems.
+      </p>
       <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
         <Button asChild size="lg" className="w-full sm:w-auto">
           <a href="#contact">

@@ -31,6 +31,23 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rajarshi Karmakar",
+    // Replace with your actual domain
+    "url": "https://your-domain.com",
+    "sameAs": [
+      // Replace with your actual social links
+      "https://github.com/your-github",
+      "https://linkedin.com/in/your-linkedin",
+      "https://twitter.com/your-twitter"
+    ],
+    "jobTitle": "AI Software Engineer & Researcher",
+    // Replace with a real profile image
+    "image": "https://placehold.co/512x512.png" 
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -38,6 +55,14 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet" />
+        
+        {/* Add your analytics script here. Example for Plausible */}
+        {/* <script defer data-domain="your-domain.com" src="https://plausible.io/js/script.js"></script> */}
+        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
       </head>
       <body className={cn("font-body antialiased", process.env.NODE_ENV === 'development' ? 'debug-screens' : undefined)}>
         <ThemeProvider

@@ -9,24 +9,64 @@ import { cn } from '@/lib/utils';
 
 const navLinks = [
   { href: '#about', label: 'About' },
+  { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
   { href: '#experience', label: 'Experience' },
+  { href: '#articles', label: 'Articles' },
   { href: '#contact', label: 'Contact' },
 ];
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    
+    const sections = navLinks.map(link => document.querySelector(link.href)).filter(el => el);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: '-20% 0px -80% 0px' } 
+    );
+
+    sections.forEach(section => {
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      sections.forEach(section => {
+        if (section) observer.unobserve(section);
+      });
+    };
   }, []);
   
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const renderNavLink = (link: typeof navLinks[0], isMobile = false) => (
+    <Link
+      key={link.href}
+      href={link.href}
+      className={cn(
+        'text-sm font-medium transition-colors hover:text-foreground',
+        activeSection === link.href.substring(1) ? 'text-foreground' : 'text-muted-foreground'
+      )}
+      onClick={isMobile ? () => setIsMenuOpen(false) : undefined}
+      prefetch={false}
+    >
+      {link.label}
+    </Link>
+  );
 
   return (
     <header
@@ -40,16 +80,7 @@ export function Header() {
           <span className="text-lg font-bold">Rajarshi Karmakar</span>
         </Link>
         <nav className="hidden items-center gap-4 md:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-              prefetch={false}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => renderNavLink(link))}
           <Button asChild>
              <a href="/resume.pdf" download>Download Resume</a>
           </Button>
@@ -70,17 +101,7 @@ export function Header() {
       {isMenuOpen && (
         <div className="md:hidden">
           <nav className="flex flex-col items-center space-y-4 py-4 border-t">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-                onClick={() => setIsMenuOpen(false)}
-                prefetch={false}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => renderNavLink(link, true))}
              <Button asChild>
                 <a href="/resume.pdf" download>Download Resume</a>
             </Button>

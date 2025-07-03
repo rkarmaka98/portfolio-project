@@ -85,14 +85,14 @@ export function ProjectsSection() {
             </CardContent>
             <CardFooter className="mt-auto flex justify-start gap-2 border-t px-6 py-4">
               {project.demoLink && (
-                <Button variant="outline" size="sm" asChild>
+                <Button size="sm" asChild>
                   <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
                     <PlayCircle className="mr-2 h-4 w-4" /> Live Demo
                   </a>
                 </Button>
               )}
               {project.githubLink && (
-                <Button variant="outline" size="sm" asChild>
+                <Button variant="secondary" size="sm" asChild>
                   <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" /> GitHub
                   </a>
