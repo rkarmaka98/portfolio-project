@@ -5,18 +5,18 @@ import Link from "next/link";
 
 const socialLinks = [
   {
-    href: "https://github.com/your-github",
-    icon: Github,
+    href: "https://github.com/rkarmaka98",
+    icon: "github-original",
     label: "GitHub",
   },
   {
-    href: "https://linkedin.com/in/your-linkedin",
-    icon: Linkedin,
+    href: "https://linkedin.com/in/rkarmakar98",
+    icon: "linkedin-plain",
     label: "LinkedIn",
   },
   {
-    href: "https://twitter.com/your-twitter",
-    icon: Twitter,
+    href: "https://twitter.com/rkarmaka98",
+    icon: "twitter-original",
     label: "Twitter / X",
   },
 ];
@@ -34,13 +34,13 @@ export function ContactSection() {
         <CardContent className="flex flex-col items-center gap-6">
           <div className="flex flex-col gap-4 sm:flex-row">
             <Button asChild size="lg">
-              <a href="mailto:your-email@example.com">
+              <a href="mailto:rkarmaka98@gmail.com">
                 <Send className="mr-2 h-5 w-5" />
                 Send an Email
               </a>
             </Button>
             <Button asChild variant="secondary" size="lg">
-              <a href="https://calendly.com/your-calendly" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/rkarmaka98/30min" target="_blank" rel="noopener noreferrer">
                 <Calendar className="mr-2 h-5 w-5" />
                 Schedule a Meeting
               </a>
