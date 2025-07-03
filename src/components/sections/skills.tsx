@@ -20,8 +20,8 @@ const skillCategories: {
     skills: [
       { name: "PyTorch", icon: "pytorch-original" },
       { name: "TensorFlow", icon: "tensorflow-original" },
-      { name: "scikit-learn", icon: "scikit-learn-plain" },
-      { name: "Hugging Face", icon: "huggingface-original" },
+      { name: "scikit-learn", icon: "scikitlearn-plain" },
+      { name: "Hugging Face" },
     ],
   },
   {
@@ -47,7 +47,7 @@ const skillCategories: {
     skills: [
       { name: "CI/CD" },
       { name: "GCP", icon: "googlecloud-plain" },
-      { name: "AWS", icon: "amazonwebservices-original-wordmark" },
+      { name: "AWS", icon: "amazonwebservices-plain-wordmark" },
       { name: "Terraform", icon: "terraform-plain" },
     ],
   },
