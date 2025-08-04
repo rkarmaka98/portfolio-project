@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "Rajarshi's Digital Vista",
     images: [
       {
-        url: 'https://placehold.co/1200x630.png', // Replace with a real preview image
+        url: 'https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg', // Replace with a real preview image
         width: 1200,
         height: 630,
       },
@@ -39,9 +39,9 @@ export default function RootLayout({
     "url": "https://your-domain.com",
     "sameAs": [
       // Replace with your actual social links
-      "https://github.com/your-github",
-      "https://linkedin.com/in/your-linkedin",
-      "https://twitter.com/your-twitter"
+      "https://github.com/rkarmaka98",
+      "https://linkedin.com/in/rkarmakar98",
+      "https://twitter.com/rkarmaka98"
     ],
     "jobTitle": "AI Software Engineer & Researcher",
     // Replace with a real profile image

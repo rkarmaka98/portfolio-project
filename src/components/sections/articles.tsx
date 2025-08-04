@@ -47,6 +47,26 @@ const articles = [
     readTime: "10 min read",
     date: "2024-03-15",
   },
+  {
+    title: "Handling Big Git Repos in AI Development",
+    description: "Utilizing good Software Development Practices while developing AI workflow.",
+    tags: ["Git", "AI", "Software Development"],
+    image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/0*1lAyjQ33MPmN-pj8",
+    link: "https://medium.com/@rkarmakar98/handling-big-git-repos-in-ai-development-a8d2343514d7",
+    dataAiHint: "AI Git practices",
+    readTime: "3 min read",
+    date: "2025-07-03",
+  },
+  {
+    title: "Boosting Productivity to Compete with AI",
+    description: "In this age of a new Intelligence, the biggest question arises, how can we improve ourselves more and our thinking to become a great thinkers?",
+    tags: ["Productivity", "Focus", "Discipline"],
+    image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/0*kvbfeIWhUhVExwGd",
+    link: "https://medium.com/@rkarmakar98/boosting-productivity-to-compete-with-ai-533489ac0c4e",
+    dataAiHint: "Using Discipline for Productivity",
+    readTime: "9 min read",
+    date: "2025-07-13",
+  },
 ];
 
 const fuseOptions = {

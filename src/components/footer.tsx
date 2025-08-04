@@ -4,17 +4,17 @@ import { Button } from "./ui/button";
 
 const socialLinks = [
   {
-    href: "https://github.com/your-github",
+    href: "https://github.com/rkarmaka98",
     icon: Github,
     label: "GitHub",
   },
   {
-    href: "https://linkedin.com/in/your-linkedin",
+    href: "https://linkedin.com/in/rkarmakar98",
     icon: Linkedin,
     label: "LinkedIn",
   },
   {
-    href: "https://twitter.com/your-twitter",
+    href: "https://twitter.com/rkarmaka98",
     icon: Twitter,
     label: "Twitter / X",
   },
