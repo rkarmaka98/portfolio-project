@@ -35,18 +35,19 @@ const projects = [
     role: "AI Researcher & Developer",
     image: "https://placehold.co/600x400.png",
     demoLink: "#",
-    githubLink: "#",
-    dataAiHint: "data visualization dashboard"
+    githubLink: "",
+    dataAiHint: ""
   },
   {
-    title: "Project Gamma: Real-time Object Detection",
-    description: "A high-performance object detection model deployed at the edge for real-time video stream analysis, achieving state-of-the-art accuracy.",
-    technologies: ["TensorFlow", "FastAPI", "Docker", "AWS"],
-    role: "ML Engineer",
-    image: "https://placehold.co/600x400.png",
-    githubLink: "#",
+    title: "SuperSegmentation: Novel architecture for Keypoint matching",
+    description: "A high performance Keypoint detection and matching model with the semantic context for SLAM in robotics, achieving state-of-the-art benchmark for cityscape.",
+    technologies: ["Pytorch", "Tensorboard", "Git", "CUDA"],
+    role: "AI Researcher at Valeo",
+    image: "https://private-user-images.githubusercontent.com/130791740/480115085-4b40cc40-8623-4a6e-9920-b8118a149ef3.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTcyNjU4NDksIm5iZiI6MTc1NzI2NTU0OSwicGF0aCI6Ii8xMzA3OTE3NDAvNDgwMTE1MDg1LTRiNDBjYzQwLTg2MjMtNGE2ZS05OTIwLWI4MTE4YTE0OWVmMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkwN1QxNzE5MDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNTAxNmEwOTZhNzk0ZjM1NzExZTY2NmFmZGFlYjRhZWFkNGU2MjIzYmMwZTk1Nzk3NTc2ZDYwMDliMDQ4M2Q4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.X5qEXZw2T3cmUQ2ivfoinNqJEKZuOOnoFR2-OqL1k70",
+    demoLink: "https://github.com/user-attachments/assets/d1b99108-9b3b-4d37-a1d5-35b6da3a99b2",
+    githubLink: "https://github.com/rkarmaka98/SuperSegmentaion",
     blogLink: "#",
-    dataAiHint: "cctv camera"
+    dataAiHint: "Computer vision AI model"
   },
   {
     title: "Project Delta: Open-Source Contributor",
