@@ -13,6 +13,7 @@ const skillCategories: {
       { name: "RAG Pipelines" },
       { name: "Deep Learning" },
       { name: "NLP" },
+      { name: "Agentic Systems" },
     ],
   },
   {
@@ -22,6 +23,7 @@ const skillCategories: {
       { name: "TensorFlow", icon: "tensorflow-original" },
       { name: "scikit-learn", icon: "scikitlearn-plain" },
       { name: "Hugging Face" },
+      { name: "Autogen" },
     ],
   },
   {
@@ -30,16 +32,15 @@ const skillCategories: {
       { name: "Git", icon: "git-plain" },
       { name: "Docker", icon: "docker-plain" },
       { name: "Kubernetes", icon: "kubernetes-plain" },
-      { name: "Weights & Biases" },
     ],
   },
   {
-    title: "Backend/Full-stack",
+    title: "Backend",
     skills: [
       { name: "FastAPI", icon: "fastapi-plain" },
       { name: "Node.js", icon: "nodejs-plain" },
       { name: "PostgreSQL", icon: "postgresql-plain" },
-      { name: "Next.js", icon: "nextjs-original" },
+      { name: "Kafka", icon: "apachekafka-original" },
     ],
   },
   {
@@ -49,6 +50,8 @@ const skillCategories: {
       { name: "GCP", icon: "googlecloud-plain" },
       { name: "AWS", icon: "amazonwebservices-plain-wordmark" },
       { name: "Terraform", icon: "terraform-plain" },
+      { name: "Teamcity" },
+      { name: "Ansible", icon: "ansible-plain-wordmark colored"}
     ],
   },
   {

@@ -9,22 +9,23 @@ import { Award, Book, GitMerge, GraduationCap } from "lucide-react";
 import Link from "next/link";
 
 const moreData = [
-  {
-    icon: Book,
-    title: "Publications / Research",
-    description: "Peer-reviewed papers and articles.",
-    items: [
-      { name: "A Novel Approach to Multi-Agent Collaboration", link: "#" },
-      { name: "Efficient Attention Mechanisms for Edge Devices", link: "#" },
-    ],
-  },
+  // {
+  //   icon: Book,
+  //   title: "Publications / Research",
+  //   description: "Peer-reviewed papers and articles.",
+  //   items: [
+  //     { name: "A Novel Approach to Multi-Agent Collaboration", link: "#" },
+  //     { name: "Efficient Attention Mechanisms for Edge Devices", link: "#" },
+  //   ],
+  // },
   {
     icon: GitMerge,
     title: "Open Source Contributions",
     description: "Contributions to major AI/ML libraries.",
     items: [
-      { name: "PyTorch - Performance Patch", link: "#" },
-      { name: "Hugging Face Transformers - Added new model", link: "#" },
+      // { name: "PyTorch - Performance Patch", link: "#" },
+      // { name: "Hugging Face Transformers - Added new model", link: "#" },
+      { name: "OpenSSL - Security and Performance Patch", link: "https://github.com/openssl/openssl/issues?q=is%3Aclosed%20%20author%3Arkarmaka98"}
     ],
   },
   {
@@ -32,8 +33,11 @@ const moreData = [
     title: "Certifications & Courses",
     description: "Continuous learning and skill development.",
     items: [
-      { name: "DeepLearning.AI - TensorFlow Developer", link: "#" },
-      { name: "AWS Certified Machine Learning - Specialty", link: "#" },
+      { name: "Neural Networks and Deep Learning", link: "https://www.coursera.org/account/accomplishments/verify/6GS3NVSYH2QM" },
+      { name: "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization", link: "https://www.coursera.org/account/accomplishments/verify/6P9AJKC7ZHR8"},
+      { name: "Structuring Machine Learning Projects", link: "https://www.coursera.org/account/accomplishments/verify/F9WNH4E636VH"},
+      { name: "Browser-based Models with TensorFlow.js" , link: "https://www.coursera.org/account/accomplishments/verify/KVDSPPFRGZ8M"},
+      { name: "AWS Certified Cloud Practitioner", link: "" },
     ],
   },
   {
@@ -41,8 +45,8 @@ const moreData = [
     title: "Benchmarks & Demos",
     description: "Interactive demos and leaderboard scores.",
     items: [
-      { name: "Hugging Face Space: RAG Demo", link: "#" },
-      { name: "PaperWithCode: Top 5 on XYZ Benchmark", link: "#" },
+      { name: "SafeSpaceAI: Agentic RAG Application Demo", link: "https://www.linkedin.com/posts/rajarshi-karmakar-ai-engineer_ai-digitalhealth-europe-activity-7356966692482121728-B-jq" },
+      // { name: "PaperWithCode: Top 5 on XYZ Benchmark", link: "#" },
     ],
   },
 ];

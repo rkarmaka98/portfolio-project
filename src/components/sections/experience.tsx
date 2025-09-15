@@ -10,6 +10,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { Button } from "../ui/button";
+import { text } from "stream/consumers";
 
 const experienceData = [
   {
@@ -17,10 +18,12 @@ const experienceData = [
     company: "Valeo Vision Systems",
     period: "Feb 2025 - Aug 2025",
     accomplishments: [
-      { text: "Designed a new vision model (“SuperSegmentation”) to improve navigation in self-driving cars by combining object recognition with precise feature detection.", link: "#" },
-      { text: "Improved mapping consistency by +34% and reduced positioning errors by 80%, making visual navigation significantly more reliable." },
-      { text: "Scaled training on 30,000+ driving scenes, cutting experiment turnaround by 50% and delivering real-time performance (~15 ms per frame)." },
-      { text: "Recognized for introducing semantic awareness into keypoint detection — a novel method that outperformed state-of-the-art benchmarks." },
+      { text: "Designed and implemented a novel computer vision model (“SuperSegmentation”) that combines image understanding with precise feature detection, supporting self-driving car navigation (SLAM).", link: "https://github.com/rkarmaka98/SuperSegmentaion" },
+      { text: "Conducted a comprehensive review of 50+ research papers to identify gaps in existing methods, discovering a large opportunity for improving consistency and precision in visual mapping." },
+      { text: "Built a scalable training system using 30,000+ real-world driving frames, ensuring the model learned to recognize roads, vehicles, and structures while detecting key visual points with sub-pixel accuracy." },
+      { text: "Achieved benchmarking performce by increasing consistency of visual landmarks by +34% compared to baseline methods, reducing positioning errors by 80%, enabling more reliable navigation, achieving near-perfect matching accuracy (99.6%) in test scenarios." },
+      { text: "Streamlined experimentation and training workflows, cutting turnaround time by 50%, while ensuring compatibility with GPU acceleration and production-ready performance (~15 ms per frame)."},
+      { text: "Recognized for introducing semantic awareness to keypoint detection, making SLAM more robust in dynamic urban environments."}
     ],
   },
   {

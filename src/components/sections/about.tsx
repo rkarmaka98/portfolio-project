@@ -6,13 +6,15 @@ const strengths = [
   "Agentic AI Systems",
   "Transformers & Attention Mechanisms",
   "Backend Engineering",
-  "Python for AI/ML",
+  "Python for AI/ML & software development",
+  "Building and deploying AI models from scratch",
+  "System design"
 ];
 
 const currentlyExploring = [
-    "Server-side generation with Gemini 2.0 Flash",
-    "Advanced agentic workflows with LangGraph",
-    "Optimizing RAG pipelines for low-latency applications"
+    "Building and experimenting with LLM models",
+    "Advanced agentic workflows with LangGraph and AutoGen",
+    "Optimizing RAG pipelines with performance metrices"
 ];
 
 export function AboutSection() {
@@ -23,10 +25,10 @@ export function AboutSection() {
           <h2 className="text-3xl font-bold tracking-tight">About Me</h2>
           <div className="space-y-4 text-muted-foreground">
             <p>
-              I am an AI Software Engineer and Researcher passionate about developing robust, scalable, and impactful intelligent systems. My expertise lies at the intersection of deep learning research and production-grade software engineering, allowing me to build solutions that are not only theoretically sound but also practically viable.
+              I am an Software Engineer passionate about developing robust, scalable and impactful intelligent AI systems. My expertise lies at the intersection of deep learning research and production-grade software engineering, allowing me to build solutions that are not only state-of-the art but also practically viable in real-world.
             </p>
             <p>
-              My AI philosophy centers on creating systems that are transparent, interpretable, and aligned with human values. I am particularly interested in agentic AI and how autonomous systems can collaborate with humans to solve complex problems.
+              My AI philosophy centers on creating systems that are transparent, interpretable, and aligned with human values. I am particularly interested in AI systems that can be interated to businesses and existing software applications and how autonomous systems can collaborate with humans to solve complex problems.
             </p>
              <div className="mt-6 rounded-lg border bg-card p-4 text-sm">
                 <h4 className="mb-3 flex items-center font-semibold text-card-foreground">

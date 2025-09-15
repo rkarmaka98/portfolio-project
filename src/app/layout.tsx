@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "Rajarshi's Digital Vista",
     images: [
       {
-        url: 'https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg', // Replace with a real preview image
+        url: 'https://images.pexels.com/photos/2156/sky-earth-space-working.jpg', // Replace with a real preview image
         width: 1200,
         height: 630,
       },
@@ -45,7 +45,7 @@ export default function RootLayout({
     ],
     "jobTitle": "AI Software Engineer & Researcher",
     // Replace with a real profile image
-    "image": "https://placehold.co/512x512.png" 
+    "image": "https://media.licdn.com/dms/image/v2/D4D03AQG4VO-QTFnCpw/profile-displayphoto-scale_400_400/B4DZh3EFasGkAg-/0/1754344217006?e=1760572800&v=beta&t=O8MNOnYfoOPtfVE2ohlzGRkhJex_o59mU6kbNA_1Mu4" 
   };
 
   return (
