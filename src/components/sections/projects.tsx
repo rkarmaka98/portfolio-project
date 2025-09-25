@@ -29,7 +29,18 @@ const projects = [
     role: "AI Researcher at Valeo",
     image: "/segmentation-matching.png",
     demoLink: "https://github.com/user-attachments/assets/d1b99108-9b3b-4d37-a1d5-35b6da3a99b2",
-    githubLink: "https://github.com/rkarmaka98/SuperSegmentaion",
+    // githubLink: "https://github.com/rkarmaka98/SuperSegmentaion",
+    // blogLink: "#",
+    dataAiHint: "Gemini AI platform"
+  },
+  {
+    title: "SafeSpaceAI: AI platform for Clinical Therapists",
+    description: "A Gemini AI based platform to analyze patients mood in real time, an AI Chatbot for giving therapy to patients and a whole platform to monitor patients' mood.",
+    technologies: ["ReactJs", "Typescript", "Gemini", "NodeJs"],
+    // role: "AI Researcher at Valeo",
+    image: "https://github.com/rkarmaka98/portfolio-project/blob/master/public/moodchart.png",
+    demoLink: "https://github.com/rkarmaka98/portfolio-project/blob/master/public/SafeSpaceAI%20Final%20Demo.mp4",
+    // githubLink: "https://github.com/rkarmaka98/SuperSegmentaion",
     // blogLink: "#",
     dataAiHint: "Computer vision AI model"
   },
