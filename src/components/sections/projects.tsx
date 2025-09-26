@@ -38,8 +38,8 @@ const projects = [
     description: "A Gemini AI based platform to analyze patients mood in real time, an AI Chatbot for giving therapy to patients and a whole platform to monitor patients' mood.",
     technologies: ["ReactJs", "Typescript", "Gemini", "NodeJs"],
     // role: "AI Researcher at Valeo",
-    image: "https://github.com/rkarmaka98/portfolio-project/blob/master/public/moodchart.png",
-    demoLink: "https://github.com/rkarmaka98/portfolio-project/blob/master/public/SafeSpaceAI%20Final%20Demo.mp4",
+    image: "/moodchart.png",
+    demoLink: "https://github.com/user-attachments/assets/a26a2d51-bfe4-4a52-9af7-e1873e38a8e2",
     // githubLink: "https://github.com/rkarmaka98/SuperSegmentaion",
     // blogLink: "#",
     dataAiHint: "Computer vision AI model"
