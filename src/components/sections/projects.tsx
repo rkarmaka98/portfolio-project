@@ -58,8 +58,8 @@ const projects = [
     description: "Self-Driving Car Simulation using Reinforcement Learning aims to create an environment where an agent learns to drive a car autonomously",
     technologies: ["Python", "Git", "Pytorch", "Reinforcement Leanring", "Pygame"],
     role: "OSS Contributor",
-    image: "https://github.com/user-attachments/assets/7146335e-90e0-40cf-b844-18543974753b",
-    demoLink: "https://github.com/user-attachments/assets/a26a2d51-bfe4-4a52-9af7-e1873e38a8e2",
+    image: "/SelfdrivingSim.png",
+    demoLink: "https://github.com/user-attachments/assets/7146335e-90e0-40cf-b844-18543974753b",
     githubLink: "https://github.com/rkarmaka98/SelfDrivingCarSimulation",
     dataAiHint: "open source code"
   },
