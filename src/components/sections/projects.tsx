@@ -44,15 +44,15 @@ const projects = [
     // blogLink: "#",
     dataAiHint: "Computer vision AI model"
   },
-  // {
-  //   title: "Project Delta: Open-Source Contributor",
-  //   description: "Contributed significantly to a popular open-source AI framework, focusing on performance optimization and new feature implementation.",
-  //   technologies: ["PyTorch", "Git", "CI/CD"],
-  //   role: "OSS Contributor",
-  //   image: "https://placehold.co/600x400.png",
-  //   githubLink: "#",
-  //   dataAiHint: "open source code"
-  // },
+  {
+    title: "LangChain/LangGraph: Open-Source Contributor",
+    description: "Contributed significantly to a popular open-source Agentic AI framework, focusing on performance optimization and new feature implementation.",
+    technologies: ["Python", "Git", "Github Actions"],
+    role: "OSS Contributor",
+    image: "https://github.com/user-attachments/assets/40b8c8c9-0f55-4740-9d44-5ef6ab2f041b",
+    githubLink: "https://github.com/langchain-ai/langgraph",
+    dataAiHint: "open source code"
+  },
 ];
 
 export function ProjectsSection() {
