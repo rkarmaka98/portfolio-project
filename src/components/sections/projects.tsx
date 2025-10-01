@@ -54,7 +54,7 @@ const projects = [
     dataAiHint: "open source code"
   },
   {
-    title: "LangChain/LangGraph: Open-Source Contributor",
+    title: "SelfDriving Car Simulation Agent",
     description: "Self-Driving Car Simulation aims to create an environment where an agent learns to drive a car autonomously",
     technologies: ["Python", "Git", "Pytorch", "Numpy", "Pygame"],
     role: "OSS Contributor",
