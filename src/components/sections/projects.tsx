@@ -53,6 +53,15 @@ const projects = [
     githubLink: "https://github.com/langchain-ai/langgraph",
     dataAiHint: "open source code"
   },
+  {
+    title: "LangChain/LangGraph: Open-Source Contributor",
+    description: "Self-Driving Car Simulation aims to create an environment where an agent learns to drive a car autonomously",
+    technologies: ["Python", "Git", "Pytorch", "Numpy", "Pygame"],
+    role: "OSS Contributor",
+    image: "https://github.com/user-attachments/assets/7146335e-90e0-40cf-b844-18543974753b",
+    githubLink: "https://github.com/rkarmaka98/SelfDrivingCarSimulation",
+    dataAiHint: "open source code"
+  },
 ];
 
 export function ProjectsSection() {
