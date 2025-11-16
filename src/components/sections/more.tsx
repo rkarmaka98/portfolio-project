@@ -25,8 +25,8 @@ const moreData = [
     items: [
       // { name: "PyTorch - Performance Patch", link: "#" },
       // { name: "Hugging Face Transformers - Added new model", link: "#" },
-      { name: "OpenSSL - Security and Performance Patch", link: "https://github.com/openssl/openssl/issues?q=is%3Aclosed%20%20author%3Arkarmaka98"}
-      { name: "LangChain/LangGraph - Bug fixes in Checkpoint component", link: "#" }
+      { name: "OpenSSL - Security and Performance Patch", link: "https://github.com/openssl/openssl/issues?q=is%3Aclosed%20%20author%3Arkarmaka98"},
+      { name: "LangChain/LangGraph - Bug fixes in Checkpoint component", link: "#" },
     ],
   },
   {
