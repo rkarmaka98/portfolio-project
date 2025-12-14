@@ -92,6 +92,13 @@ export function ProjectList({ projects }) {
                   </a>
                 </Button>
               )}
+              {project.paper && (
+                <Button variant="outline" size="sm" asChild>
+                  <a href={project.paper} target="_blank" rel="noopener noreferrer">
+                    <BookOpen className="mr-2 h-4 w-4" /> Paper
+                  </a>
+                </Button>
+              )}
             </CardFooter>
           </Card>
         )) : <p className="col-span-full text-center text-muted-foreground">No projects found.</p>}
