@@ -22,8 +22,6 @@ const skillCategories: {
       { name: "PyTorch", icon: "pytorch-original" },
       { name: "TensorFlow", icon: "tensorflow-original" },
       { name: "scikit-learn", icon: "scikitlearn-plain" },
-      { name: "Hugging Face" },
-      { name: "Autogen" },
     ],
   },
   {
@@ -37,7 +35,6 @@ const skillCategories: {
   {
     title: "Backend",
     skills: [
-      { name: "FastAPI", icon: "fastapi-plain" },
       { name: "Node.js", icon: "nodejs-plain" },
       { name: "PostgreSQL", icon: "postgresql-plain" },
       { name: "Kafka", icon: "apachekafka-original" },
@@ -51,14 +48,14 @@ const skillCategories: {
       { name: "AWS", icon: "amazonwebservices-plain-wordmark" },
       { name: "Terraform", icon: "terraform-plain" },
       { name: "Teamcity" },
-      { name: "Ansible", icon: "ansible-plain-wordmark colored"}
+      { name: "Ansible", icon: "ansible-plain-wordmark colored"},
+      { name: "Grafana", icon: "grafana-plain" },
     ],
   },
   {
     title: "Vector DBs / LLMs",
     skills: [
       { name: "Pinecone" },
-      { name: "Weaviate" },
       { name: "LangGraph" },
       { name: "LangChain" },
     ],

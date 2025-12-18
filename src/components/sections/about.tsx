@@ -2,19 +2,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, Lightbulb } from "lucide-react";
 
 const strengths = [
-  "Retrieval-Augmented Generation (RAG)",
-  "Agentic AI Systems",
+  "Computer Vision Systems",
+  "Deep Learning Model Development",
+  "Agentic AI Systems Design",
   "Transformers & Attention Mechanisms",
-  "Backend Engineering",
+  "Backend Microservices",
   "Python for AI/ML & software development",
-  "Building and deploying AI models from scratch",
+  "Cloud Infrastructure (AWS, GCP)",
+  "Linux & DevOps",
   "System design"
 ];
 
 const currentlyExploring = [
-    "Building and experimenting with LLM models",
-    "Advanced agentic workflows with LangGraph and AutoGen",
-    "Optimizing RAG pipelines with performance metrices"
+    "Vision based Deep Learning Models for real world problems",
 ];
 
 export function AboutSection() {
@@ -25,10 +25,10 @@ export function AboutSection() {
           <h2 className="text-3xl font-bold tracking-tight">About Me</h2>
           <div className="space-y-4 text-muted-foreground">
             <p>
-              I am an Software Engineer passionate about developing robust, scalable and impactful intelligent AI systems. My expertise lies at the intersection of deep learning research and production-grade software engineering, allowing me to build solutions that are not only state-of-the art but also practically viable in real-world.
+              I am an AI Researcher & Software Engineer passionate about developing robust, scalable and impactful intelligent systems and software. My expertise lies at the intersection of deep learning research and production-grade software engineering, allowing me to build solutions that are not only state-of-the art but also practically viable in real-world.
             </p>
             <p>
-              My AI philosophy centers on creating systems that are transparent, interpretable, and aligned with human values. I am particularly interested in AI systems that can be interated to businesses and existing software applications and how autonomous systems can collaborate with humans to solve complex problems.
+              My philosophy centers on creating systems that are transparent, interpretable, and aligned with human values. I am particularly interested in AI and autonomous systems that can collaborate with humans to solve complex problems.
             </p>
              <div className="mt-6 rounded-lg border bg-card p-4 text-sm">
                 <h4 className="mb-3 flex items-center font-semibold text-card-foreground">
@@ -45,7 +45,7 @@ export function AboutSection() {
                 </ul>
             </div>
             <p>
-              I am open to relocating and remote opportunities that allow me to contribute to challenging AI projects.
+              I am open to relocating and remote opportunities that allow me to contribute to challenging AI projects to solve scientific problems.
             </p>
           </div>
         </div>

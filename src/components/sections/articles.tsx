@@ -48,6 +48,16 @@ const articles = [
   //   date: "2024-03-15",
   // },
   {
+    title: "Manufacturing Inspection using Computer Vision",
+    description: "Manufacturing Inspection using Computer Vision techniques to identify defects in products on an assembly line.",
+    tags: ["Computer Vision", "Image Processing", "Python"],
+    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*Qxs9uf31QPwMsAYT.JPG",
+    link: "https://rkarmakar98.medium.com/manufacturing-inspection-using-computer-vision-66bf36476569",
+    dataAiHint: "Computer Vision Inspection",
+    readTime: "3 min read",
+    date: "2025-12-17",
+  },
+  {
     title: "Handling Big Git Repos in AI Development",
     description: "Utilizing good Software Development Practices while developing AI workflow.",
     tags: ["Git", "AI", "Software Development"],
