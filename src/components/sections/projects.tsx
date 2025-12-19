@@ -55,14 +55,44 @@ const projects = [
     dataAiHint: "open source code"
   },
   {
-    title: "SelfDriving Car Simulation Agent",
-    description: "Self-Driving Car Simulation using Reinforcement Learning aims to create an environment where an agent learns to drive a car autonomously",
+    title: "SelfDriving Car Simulation Agent using Q Learning",
+    description: "Self-Driving Car Simulation using Deep Reinforcement Learning aims to create an environment where an agent learns to drive a car autonomously",
     technologies: ["Python", "Git", "Pytorch", "Reinforcement Leanring", "Pygame"],
     role: "Individual Contributor",
     image: "/SelfdrivingSim.png",
     demoLink: "https://github.com/user-attachments/assets/7146335e-90e0-40cf-b844-18543974753b",
     githubLink: "https://github.com/rkarmaka98/SelfDrivingCarSimulation",
-    dataAiHint: "open source code"
+    dataAiHint: "Reinforcement learning model"
+  },
+  {
+    title: "Real-time Image Filter Application",
+    description: "A web application that applies real-time image filters using OpenCV, allowing users to use webcam and see various effects instantly.",
+    technologies: ["Python", "Git", "OpenCV", "Computer Vision", "NodeJs","Flask"],
+    role: "Individual Contributor",
+    image: "https://github.com/user-attachments/assets/dc62cb82-c3d9-491d-8f2b-43eb89dd1ea7",
+    demoLink: "https://github.com/user-attachments/assets/7971fb5e-eca2-4373-b257-77fc56e1d810",
+    githubLink: "https://github.com/rkarmaka98/Image-filter-app",
+    dataAiHint: "Webcam with image filters"
+  },
+  {
+    title: "Handwritten Digit Classifier Web App",
+    description: "A web application that classifies handwritten digits using a trained machine learning model (MNIST dataset), allowing users to draw digits and get predictions.",
+    technologies: ["Python", "Git", "Computer Vision", "Tensorflow", "Flask", "Matplotlib"],
+    role: "Individual Contributor",
+    image: "https://github.com/user-attachments/assets/a6e61827-9d5c-4ba6-a0ab-244dcb6d3098",
+    demoLink: "https://github.com/user-attachments/assets/fca438b9-1fd8-463f-a18e-d0a619d36e99",
+    githubLink: "https://github.com/rkarmaka98/Handwritten-digit-classifier",
+    dataAiHint: "Handwritten digit recognition model web app"
+  },
+  {
+    title: "Emotion Detection using SVC",
+    description: "A web application that detects emotions from facial expressions using a Support Vector Classifier (SVC) model, allowing users to upload images and receive emotion predictions.",
+    technologies: ["Python", "Git", "Computer Vision", "Tensorflow", "Flask", "Matplotlib"],
+    role: "Individual Contributor",
+    image: "https://github.com/user-attachments/assets/e8fb1e13-93d8-4d0a-b676-e1549e00ea69",
+    demoLink: "https://github.com/user-attachments/assets/75b7386b-3335-4236-9e52-53ff4f92a3cb",
+    githubLink: "https://github.com/rkarmaka98/Emotion-Detection",
+    dataAiHint: "Emotion Detection model web app"
   },
 ];
 
