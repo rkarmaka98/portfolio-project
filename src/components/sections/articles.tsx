@@ -48,6 +48,16 @@ const articles = [
   //   date: "2024-03-15",
   // },
   {
+    title: "Satellite or Space Debris Tracking using Computer Vision",
+    description: "Satellite or Space Debris Tracking using Computer Vision techniques to identify and track objects in space.",
+    tags: ["Computer Vision", "Image Processing", "Python"],
+    image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*LP-qpDuW1uLIrGSOsEk7nw.png",
+    link: "https://medium.com/@rkarmakar98/satellite-or-space-debris-tracking-using-computer-vision-7e4b6c6b7770",
+    dataAiHint: "Space Debris Tracking",
+    readTime: "5 min read",
+    date: "2025-12-23",
+  },
+  {
     title: "Manufacturing Inspection using Computer Vision",
     description: "Manufacturing Inspection using Computer Vision techniques to identify defects in products on an assembly line.",
     tags: ["Computer Vision", "Image Processing", "Python"],
